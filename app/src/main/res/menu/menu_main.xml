@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/action_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item android:id="@+id/news"
+            android:icon="@drawable/ic_news"
+            android:title="News"/>
+
+        <item android:id="@+id/specialists"
+            android:icon="@drawable/ic_specialists"
+            android:title="List of Specialists" />
+
+        <item android:id="@+id/problems"
+            android:icon="@drawable/disease"
+            android:title="Doctors available for"/>
+
+        <item android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout"/>
+    </group>
+
+    <item android:title="More Info">
+        <menu>
+            <item android:id="@+id/icon_contact"
+                android:icon="@drawable/ic_contacts"
+                android:title="Contact Us"/>
+        </menu>
+    </item>
+</menu>

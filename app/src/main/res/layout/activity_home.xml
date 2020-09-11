@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/healthcare"
+    android:orientation="vertical"
+    android:alpha="0.6">
+
+    <EditText
+        android:id="@+id/et_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rect_shape"
+        android:hint="Enter the Email"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        android:textColor="#000000"/>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="258dp"
+        android:background="@drawable/button_rect"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:onClick="btnLoginClick"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rect_shape"
+        android:hint="Enter the Password"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        android:inputType="numberPassword"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/et_for_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button_rect"
+        android:padding="8dp"
+        android:text="Havn't Account? Sign up"
+        android:textColor="#000000"
+        android:onClick="SignUp"/>
+
+    <TextView
+        android:id="@+id/et_forgottenPassword"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_for_signUp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/button_rect"
+        android:padding="10dp"
+        android:text="Forgotten Password"
+        android:textColor="#000000"
+        android:onClick="Forgetpassword"/>
+
+
+</RelativeLayout>

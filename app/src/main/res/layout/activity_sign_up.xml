@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/healthcare"
+    android:alpha="0.6">
+
+    <EditText
+        android:id="@+id/et_Smail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rect_shape"
+        android:hint="Enter the Email"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/et_Spassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rect_shape"
+        android:hint="Enter the Password"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/et_Smail"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        android:inputType="numberPassword"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/et_confrim_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Smail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rect_shape"
+        android:hint="Confirm the Password"
+        android:inputType="numberPassword"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/et_Mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Smail"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rect_shape"
+        android:hint="Enter Mobile Number"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        android:textColor="#000000"/>
+
+
+    <Button
+        android:id="@+id/btn_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_rect"
+        android:text="SIGN UP"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:onClick="btnSignUpClick"/>
+
+
+</RelativeLayout>
